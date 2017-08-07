@@ -480,8 +480,8 @@ class Connection implements DriverConnection
         ) {
             return $this->_conn->getServerVersion();
         }
-
         // Unable to detect platform version.
+        return '5.7.13'; //because detection doesn't work for us
         return null;
     }
 
